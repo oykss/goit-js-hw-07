@@ -1,3 +1,6 @@
+# Ignore Prettier configuration file
+.prettierrc.json
+
 # Logs
 logs
 *.log
