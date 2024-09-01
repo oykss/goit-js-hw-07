@@ -41,7 +41,12 @@ img {
   display: block;
   max-width: 100%;
 }
-
+body > p {
+  background-color: white;
+  border-radius: 4px;
+  display: inline;
+  padding: 3px 8px;
+}
 input {
   width: 360px;
   border-radius: 4px;
@@ -55,6 +60,7 @@ button {
   border-radius: 8px;
   padding: 8px 16px;
   transition: all 250ms ease-in-out;
+  cursor: pointer;
 }
 /* Task 1 */
 #categories {
@@ -86,7 +92,7 @@ button {
 
 #categories .item li {
   border: 1px solid #2e2f42;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 8px 16px;
 }
 
@@ -136,4 +142,72 @@ button {
 
 .login-form button:is(:hover, :focus) {
   background-color: #6c8cff;
+}
+
+/* Task 5 */
+.widget {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 16px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: white;
+  border-radius: 8px;
+  width: 345px;
+  margin-top: 24px;
+}
+
+.widget button {
+  width: 169px;
+  background-color: #4e75ff;
+}
+
+.widget button:is(:hover, :focus) {
+  background-color: #6c8cff;
+}
+
+/* Task 6 */
+#controls {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  background-color: #f6f6fe;
+  margin: 0 auto 16px;
+}
+
+#controls input {
+  width: 150px;
+  text-align: center;
+}
+
+#controls button {
+  width: 120px;
+}
+
+#controls [data-create] {
+  background-color: #4e75ff;
+}
+
+#controls [data-create]:is(:hover, :focus) {
+  background-color: #6c8cff;
+}
+
+#controls [data-destroy] {
+  background-color: #ff4e4e;
+}
+
+#controls [data-destroy]:is(:hover, :focus) {
+  background-color: #ff7070;
+}
+
+#boxes {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
 }
